@@ -1,0 +1,111 @@
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+html{
+    box-sizing: border-box;
+}
+*,
+::before,
+::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+li{
+    list-style: none;
+}
+:root{
+    /* ### Primary */
+
+--Red: hsl(0, 100%, 74%);
+--Green: hsl(154, 59%, 51%);
+
+/* ### Accent */
+
+--Blue: hsl(248, 32%, 49%);
+
+/* ### Neutral */
+
+--Dark-Blue: hsl(249, 10%, 26%); 
+--Grayish-Blue: hsl(246, 25%, 77%);
+
+--box-shadow: hsla(0, 0%, 0%, .2);
+--cta-box-shadow:hsla(0, 0%, 0%, .4);
+
+}
+
+body{
+    background-size: contain;
+    background: url("images/bg-intro-desktop.png") no-repeat  var(--Red);
+}
+.whole-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+    min-height: 100vh;
+    margin: 0 4em;
+}
+.description{
+    padding: 3em;
+    line-height: 1.5em;
+    color: white;
+}
+.description h1{
+    font-size: 3em;
+    line-height: 1em;
+}
+.blue-top{
+    color: white;
+    padding: 1em 0;
+    margin-bottom: 1em;
+    text-align: center;
+    border-radius: 10px;
+    background-color: var(--Blue);
+}
+.blue-top span{
+    color: var(--Grayish-Blue);
+}
+form{
+    display: flex;
+    padding: 1.5em;
+    border-radius: 10px;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background-color: white;
+}
+.blue-top, form{
+    box-shadow: 0px 5px 0px var(--box-shadow);
+}
+ul,input,.form-cta{
+    width: 100%;
+}
+input,.form-cta{
+    padding: 1em;
+}
+input:focus{
+    border-style: none;
+    border-radius: 6px;
+    outline: 2px solid var(--Blue);
+}
+.error{
+    text-align: end;
+    color: var(--Red);
+    margin: .5em 0 .9em 0;
+}
+.form-cta{
+    color: white;
+    cursor: pointer;
+    border-style: none;
+    border-radius: 6px;
+    text-transform: uppercase;
+    background-color: var(--Green);
+}
+.form-cta:hover{
+    transition: .1s ease;
+    opacity: .8;
+    box-shadow: 0px 3px 0px var(--cta-box-shadow);
+}
+.terms{
+    margin: .5em 0 .9em 0;
+}
