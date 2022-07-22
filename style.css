@@ -126,3 +126,15 @@ input:focus{
 .terms-red{
     color: var(--Red);
 }
+
+@media (max-width:650px){
+    .whole-container{
+        grid-template-columns: 1fr;
+        width: 90%;
+        margin: auto;
+    }
+    .description{
+        text-align: center;
+        padding: 0em;
+    }
+}
