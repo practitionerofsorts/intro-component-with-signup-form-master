@@ -29,6 +29,7 @@ li{
 --Dark-Blue: hsl(249, 10%, 26%); 
 --Grayish-Blue: hsl(246, 25%, 77%);
 
+/* box shadows */
 --box-shadow: hsla(0, 0%, 0%, .2);
 --cta-box-shadow:hsla(0, 0%, 0%, .4);
 
@@ -47,11 +48,13 @@ body{
 }
 .description{
     padding: 3em;
+    padding-left: 1em;
     line-height: 1.5em;
     color: white;
 }
 .description h1{
     font-size: 3em;
+    margin-bottom: .5em;
     line-height: 1em;
 }
 .blue-top{
@@ -67,12 +70,15 @@ body{
 }
 form{
     display: flex;
-    padding: 1.5em;
+    padding: 1.5em 2em;
     border-radius: 10px;
     align-items: center;
     flex-direction: column;
     justify-content: center;
     background-color: white;
+}
+li{
+    margin-bottom: 1em;
 }
 .blue-top, form{
     box-shadow: 0px 5px 0px var(--box-shadow);
@@ -82,13 +88,20 @@ ul,input,.form-cta{
 }
 input,.form-cta{
     padding: 1em;
+    border-radius: 4px;
+    border-style: none;
+}
+input{
+    border: 1px solid hsla(0, 0%, 0%, .4);
+    padding-left: 1.5em;
 }
 input:focus{
     border-style: none;
     border-radius: 6px;
-    outline: 2px solid var(--Blue);
+    outline: 1.5px solid var(--Blue);
 }
 .error{
+    display: none;
     text-align: end;
     color: var(--Red);
     margin: .5em 0 .9em 0;
@@ -97,7 +110,6 @@ input:focus{
     color: white;
     cursor: pointer;
     border-style: none;
-    border-radius: 6px;
     text-transform: uppercase;
     background-color: var(--Green);
 }
@@ -108,4 +120,9 @@ input:focus{
 }
 .terms{
     margin: .5em 0 .9em 0;
+    text-align: center;
+    color: var(--Grayish-Blue);
+}
+.terms-red{
+    color: var(--Red);
 }
