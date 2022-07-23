@@ -104,10 +104,7 @@ input:focus{
     display: none;
     text-align: end;
     color: var(--Red);
-    margin: .5em 0 .9em 0;
-}
-.error.active{
-    display: block;
+    margin: .5em 0 1.5em ;
 }
 .form-cta{
     color: white;
@@ -122,7 +119,7 @@ input:focus{
     box-shadow: 0px 3px 0px var(--cta-box-shadow);
 }
 .terms{
-    margin: .5em 0 .9em 0;
+    margin: .9em 0 0 ;
     text-align: center;
     color: var(--Grayish-Blue);
     font-size: 13px;
@@ -133,6 +130,14 @@ input:focus{
 .form-container{
     width: 100%;
     max-width: 480px;
+}
+
+/* all the active elements,id's */
+#firstName.active, #lastName.active, #email.active, #password.active{
+    outline: 1.5px solid var(--Red);
+}
+.error.active{
+    display: block;
 }
 @media (max-width:650px){
     .whole-container{
