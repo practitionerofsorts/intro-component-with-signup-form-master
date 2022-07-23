@@ -86,6 +86,7 @@ body{
     background-color: white;
 }
 li{
+    position: relative;
     margin-bottom: 1em;
 }
 .blue-top, .formInput{
@@ -153,12 +154,21 @@ input::placeholder{
     width: 100%;
     max-width: 480px;
 }
+.errorImg{
+    position: absolute;
+    display: none;
+    left: 360px;
+    top: .75em;
+}
 
 /* all the active elements,id's */
 #firstName.active, #lastName.active, #email.active, #password.active{
     outline: 1.5px solid var(--Red);
 }
 .error.active{
+    display: block;
+}
+.errorImg.active{
     display: block;
 }
 @media (max-width:650px){
