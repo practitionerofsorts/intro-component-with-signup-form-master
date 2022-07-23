@@ -34,6 +34,7 @@ claimButton.addEventListener("click", () => {
     error[2].classList.add("active");
     errorImg[2].classList.add("active");
     email.classList.add("active");
+    email.placeholder = "email@example.com";
   }
   if (password.value == "") {
     error[3].classList.add("active");
