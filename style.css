@@ -157,7 +157,7 @@ input::placeholder{
 .errorImg{
     position: absolute;
     display: none;
-    left: 360px;
+    left: 86%;
     top: .75em;
 }
 
@@ -170,6 +170,10 @@ input::placeholder{
 }
 .errorImg.active{
     display: block;
+}
+#email.active::placeholder{
+    color: var(--Red);
+    font-weight: 700;
 }
 @media (max-width:650px){
     .whole-container{
