@@ -45,4 +45,17 @@ claimButton.addEventListener("click", () => {
     errorImg[3].classList.remove("active");
     password.classList.remove("active");
   }
+  firstNameValue = firstName.value;
+  lastNameValue = lastName.value;
+  if (
+    firstName.value !== "" &&
+    lastName.value !== "" &&
+    email.value.match(test) &&
+    password.value !== ""
+  ) {
+    alert(`Thank you ${firstNameValue} ${lastNameValue} for subscribing`);
+    location.reload(true);
+  } else {
+    console.log(firstNameValue);
+  }
 });
