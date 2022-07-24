@@ -56,6 +56,6 @@ claimButton.addEventListener("click", () => {
     alert(`Thank you ${firstNameValue} ${lastNameValue} for subscribing`);
     location.reload(true);
   } else {
-    console.log(firstNameValue);
+    console.log("not subscribed");
   }
 });
